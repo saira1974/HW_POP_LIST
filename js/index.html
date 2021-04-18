@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pop Star List App</title>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <media="screen"href="css/main.css" />
+  </head>
+  <body>
+    <form id="new-item-form">
+      <div id="form-wrapper">
+        <div class="form-item">
+          <label for="artist" class="primary">Artist</label>
+          <input type="text" id="artist" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="song" class="primary">Song Title</label>
+          <input type="text" id="song" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="decade" class="primary">Decade</label>
+          <select id="decade">
+            <option value="" disabled selected></option>
+            <option value="80s">80s</option>
+            <option value="90s">90s</option>
+            <option value="00s">00s</option>
+          </select>
+        </div>
+      </div>
+      <input type="submit" value="enter"/>
+    </form>
+
+    <h1>POP STAR LIST</h1>
+    <h2>Enter your details above and your favourite artist and track title will be displayed below!</h2>
+    <ul id="pop-list"></ul>
+    <p>
+      <img src="{{url_for('static, filename='images/jason_donovan.jpg')}}"/>
+      <img src="{{url_for('static', filename='images/jasondonovan.jpg')}}"/>
+      <img src="{{url_for('static', filename='images/michael_bolton.jpg')}}"/>
+      <img src="{{url_for('static', filename='images/michaelbolton.jpg')}}"/>
+      <img src="{{url_for('static', filename='images/takethat.jpeg')}}"/>
+  </p>
+  </body>
+</html>
